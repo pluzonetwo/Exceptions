@@ -6,12 +6,12 @@ public class Request {
     double value;
     public double UserRequest() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input a fractional number: ");
+        System.out.println("Input a number: ");
         if(sc.hasNextDouble()) {
             value = sc.nextDouble();
             sc.close();
         }else {
-            System.out.println("No! Input a fractional number: ");
+            System.out.println("No! Input a number: ");
             UserRequest();
         }
         return value;
